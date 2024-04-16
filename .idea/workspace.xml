@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Added new files, able to make an API called, added a save note function">
+    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Added fifa WC data files, implemented fifa query search engine, updated readme">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/fifa_data/FIFA.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/fifa_data/wc_matches.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pdf_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nba_data/nba_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/note_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/note_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/note_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ai_actions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +54,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.main.executor": "Run",
+    "Python.pdf_reader.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
@@ -105,13 +107,25 @@
       <option name="project" value="LOCAL" />
       <updated>1713237989036</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added fifa WC data files, implemented fifa query search engine, updated readme">
+      <option name="closed" value="true" />
+      <created>1713240074920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713240074920</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added a git ignore" />
     <MESSAGE value="Added new files, able to make an API called, added a save note function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new files, able to make an API called, added a save note function" />
+    <MESSAGE value="Added fifa WC data files, implemented fifa query search engine, updated readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added fifa WC data files, implemented fifa query search engine, updated readme" />
   </component>
 </project>

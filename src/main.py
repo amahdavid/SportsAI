@@ -3,10 +3,11 @@ import os
 import pandas as pd
 from llama_index.experimental import PandasQueryEngine
 from prompts import new_prompt, instruction_str, context
-from note_engine import note_engine
+from ai_actions import note_engine
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
 from llama_index.core.agent import ReActAgent
 from llama_index.llms.openai import OpenAI
+from pdf_reader import fifa_engine, nba_engine
 
 load_dotenv()
 
@@ -25,19 +26,29 @@ fifa_query_engine = PandasQueryEngine(df=fifa_df, verbose=True, instruction_str=
 fifa_query_engine.update_prompts({"": new_prompt})
 
 # specifying diff tools we have access to
-
 tools = [
     note_engine,
     QueryEngineTool(query_engine=nba_query_engine, metadata=ToolMetadata(
         name="nba_data",
         description="This gives information about the NBA"
     )),
-    QueryEngineTool(query_engine=nba_query_engine, metadata=ToolMetadata(
+    QueryEngineTool(query_engine=fifa_query_engine, metadata=ToolMetadata(
         name="fifa_data",
         description="This gives information about the FIFA WC 2022"
+    )),
+    QueryEngineTool(query_engine=nba_engine, metadata=ToolMetadata(
+        name="nba_data",
+        description="This gives information about the FIFA WC 2022"
+    )),
+    QueryEngineTool(query_engine=fifa_engine, metadata=ToolMetadata(
+        name="fifa_data",
+        description="This gives information about FIFA"
     ))
 ]
 
 llm = OpenAI(model="gpt-3.5-turbo-0613")
 agent = ReActAgent.from_tools(tools, llm=llm, verbose=True, context=context)
 
+while (prompt := input("Enter a prompt (q to quit): ")) != "q":
+    result = agent.query(prompt)
+    print(result)
