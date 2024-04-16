@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Added a git ignore">
+    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Added new files, able to make an API called, added a save note function">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/note_engine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/prompts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SportsAI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SportsAI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/fifa_data/FIFA.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/fifa_data/wc_matches.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/note_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/note_engine.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +60,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/fifa_data" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/nba_data" />
     </key>
@@ -97,12 +97,21 @@
       <option name="project" value="LOCAL" />
       <updated>1713229654949</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added new files, able to make an API called, added a save note function">
+      <option name="closed" value="true" />
+      <created>1713237989036</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713237989036</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added a git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a git ignore" />
+    <MESSAGE value="Added new files, able to make an API called, added a save note function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new files, able to make an API called, added a save note function" />
   </component>
 </project>

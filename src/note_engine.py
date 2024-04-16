@@ -15,6 +15,8 @@ def save_note(note):
 
     return "Note saved."
 
+# create a function to return a random fact
+
 
 note_engine = FunctionTool.from_defaults(
     fn=save_note,

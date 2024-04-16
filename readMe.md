@@ -1,3 +1,6 @@
+# Overview
+# Features
+# Demo
 # Setup
 ### installing libraries
 - **command**: pip3 install llama-index pypdf python-dotenv pandas
