@@ -21,5 +21,5 @@ new_prompt = PromptTemplate(
     Expression: """
 )
 
-context = """Purpose: The primary role of this agent is to assist users by providing accurate 
-            information about common NBA and FIFA statistics and details about both organizations. """
+context = """Purpose: The primary role of this agent is to assist users by providing accurate with the provided 
+dataset"""

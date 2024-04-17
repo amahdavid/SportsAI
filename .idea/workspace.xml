@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Implemented a PDF reader but application is failing">
+    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Added more data sets, made sure application exits gracefully, added a back query engine">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/ronaldo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/top5_leagues_player.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Cristiano_Ronaldo.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/LeBron_James.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fifa_data/FIFA.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/FIFA.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/fifa_data/wc_matches.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/wc_matches.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nba_data/all_seasons.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_seasons.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nba_data/nba.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nba.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pdf_reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prompts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,15 +53,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "Python.pdf_reader.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pdf_reader.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
@@ -129,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713242769943</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added more data sets, made sure application exits gracefully, added a back query engine">
+      <option name="closed" value="true" />
+      <created>1713388712643</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713388712643</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -141,6 +145,7 @@
     <MESSAGE value="Added new files, able to make an API called, added a save note function" />
     <MESSAGE value="Added fifa WC data files, implemented fifa query search engine, updated readme" />
     <MESSAGE value="Implemented a PDF reader but application is failing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented a PDF reader but application is failing" />
+    <MESSAGE value="Added more data sets, made sure application exits gracefully, added a back query engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more data sets, made sure application exits gracefully, added a back query engine" />
   </component>
 </project>

@@ -29,8 +29,8 @@ def setup_tools(query_engine):
         tools = [
             note_engine,
             QueryEngineTool(query_engine=query_engine, metadata=ToolMetadata(
-                name="sports_data",
-                description="This gives information about the NBA AND FIFA"
+                name="data",
+                description="This gives information about different queries"
             ))
         ]
         return tools
@@ -51,6 +51,6 @@ def setup_agent(tools):
 
 def setup_backup_tool():
     def backup_tool():
-        return f"Sorry, I couldn't retrieve information for. Please try again later."
+        return f"Sorry, I couldn't retrieve information. Please try again later."
 
     return backup_tool
