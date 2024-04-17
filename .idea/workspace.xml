@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Added fifa WC data files, implemented fifa query search engine, updated readme">
+    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Implemented a PDF reader but application is failing">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pdf_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/ronaldo.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/top5_leagues_player.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nba_data/nba_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fifa_data/FIFA.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/FIFA.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/fifa_data/wc_matches.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/wc_matches.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nba_data/all_seasons.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_seasons.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nba_data/nba.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/nba.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/note_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ai_actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pdf_reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +68,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/fifa_data" />
       <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/data/fifa_data" />
       <recent name="$PROJECT_DIR$/data/nba_data" />
     </key>
   </component>
@@ -115,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713240074920</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented a PDF reader but application is failing">
+      <option name="closed" value="true" />
+      <created>1713242769943</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713242769943</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -126,6 +140,7 @@
     <MESSAGE value="Added a git ignore" />
     <MESSAGE value="Added new files, able to make an API called, added a save note function" />
     <MESSAGE value="Added fifa WC data files, implemented fifa query search engine, updated readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added fifa WC data files, implemented fifa query search engine, updated readme" />
+    <MESSAGE value="Implemented a PDF reader but application is failing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented a PDF reader but application is failing" />
   </component>
 </project>

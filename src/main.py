@@ -1,54 +1,26 @@
-from dotenv import load_dotenv
-import os
-import pandas as pd
-from llama_index.experimental import PandasQueryEngine
-from prompts import new_prompt, instruction_str, context
-from ai_actions import note_engine
-from llama_index.core.tools import QueryEngineTool, ToolMetadata
-from llama_index.core.agent import ReActAgent
-from llama_index.llms.openai import OpenAI
-from pdf_reader import fifa_engine, nba_engine
+from setup import setup_query_engine, setup_agent, setup_tools, setup_backup_tool
 
-load_dotenv()
 
-# Load the data
-nba_path = os.path.join("..", "data", "nba_data", "all_seasons.csv")
-nba_df = pd.read_csv(nba_path)
+def main():
+    backup_tool = setup_backup_tool()
+    try:
+        directory_path = "../data"
+        query_engine = setup_query_engine(directory_path)
+        tools = setup_tools(query_engine)
+        agent = setup_agent(tools)
 
-fifa_path = os.path.join("..", "data", "fifa_data", "wc_matches.csv")
-fifa_df = pd.read_csv(fifa_path)
+        while True:
+            prompt = input("Enter a prompt (q to quit): ")
+            if prompt == "q":
+                break
+            result = agent.query(prompt)
+            print(result)
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
-# Create the query engine
-nba_query_engine = PandasQueryEngine(df=nba_df, verbose=True, instruction_str=instruction_str)
-nba_query_engine.update_prompts({"": new_prompt})
+        result = backup_tool()
+        print(result)
 
-fifa_query_engine = PandasQueryEngine(df=fifa_df, verbose=True, instruction_str=instruction_str)
-fifa_query_engine.update_prompts({"": new_prompt})
 
-# specifying diff tools we have access to
-tools = [
-    note_engine,
-    QueryEngineTool(query_engine=nba_query_engine, metadata=ToolMetadata(
-        name="nba_data",
-        description="This gives information about the NBA"
-    )),
-    QueryEngineTool(query_engine=fifa_query_engine, metadata=ToolMetadata(
-        name="fifa_data",
-        description="This gives information about the FIFA WC 2022"
-    )),
-    QueryEngineTool(query_engine=nba_engine, metadata=ToolMetadata(
-        name="nba_data",
-        description="This gives information about the FIFA WC 2022"
-    )),
-    QueryEngineTool(query_engine=fifa_engine, metadata=ToolMetadata(
-        name="fifa_data",
-        description="This gives information about FIFA"
-    ))
-]
-
-llm = OpenAI(model="gpt-3.5-turbo-0613")
-agent = ReActAgent.from_tools(tools, llm=llm, verbose=True, context=context)
-
-while (prompt := input("Enter a prompt (q to quit): ")) != "q":
-    result = agent.query(prompt)
-    print(result)
+if __name__ == "__main__":
+    main()
