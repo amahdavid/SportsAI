@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Added more data sets, made sure application exits gracefully, added a back query engine">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Cristiano_Ronaldo.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/LeBron_James.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prompts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +66,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/templates" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/fifa_data" />
       <recent name="$PROJECT_DIR$/data/nba_data" />
