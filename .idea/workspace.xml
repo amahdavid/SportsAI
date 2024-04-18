@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Added more data sets, made sure application exits gracefully, added a back query engine">
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/script.js" afterDir="false" />
+    <list default="true" id="4f3e8696-8872-49f4-9cff-80e430011238" name="Changes" comment="Integrated UI, AI and Backend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/readMe.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +57,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/templates" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/templates" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/fifa_data" />
       <recent name="$PROJECT_DIR$/data/nba_data" />
@@ -137,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713388712643</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Integrated UI, AI and Backend">
+      <option name="closed" value="true" />
+      <created>1713405647340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713405647340</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -150,6 +149,7 @@
     <MESSAGE value="Added fifa WC data files, implemented fifa query search engine, updated readme" />
     <MESSAGE value="Implemented a PDF reader but application is failing" />
     <MESSAGE value="Added more data sets, made sure application exits gracefully, added a back query engine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more data sets, made sure application exits gracefully, added a back query engine" />
+    <MESSAGE value="Integrated UI, AI and Backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integrated UI, AI and Backend" />
   </component>
 </project>
