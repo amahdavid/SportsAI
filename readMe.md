@@ -3,10 +3,11 @@ This is a simple AI tool that helps to answer questions about sports such as bas
 By developing this I gained hands-on experience in AI, some machine learning techniques and data analysis
 # Feature(s)
 - Querying the AI with sports related questions and maybe some car questions
+
 # Demo
 ![landing page.png](landing%20page.png)
 ![Query and Response.png](Query%20and%20Response.png)
-[Screen Recording 2024-04-17 at 7.18.53 PM.mov](Screen%20Recording%202024-04-17%20at%207.18.53%E2%80%AFPM.mov)
+**Youtube Demo Link**: https://youtu.be/aBiwKWwlrI0
 
 # Setup
 - IDE of choice, I used Pycharm and VsCode
